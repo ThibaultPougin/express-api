@@ -16,4 +16,15 @@ describe('Test router', () => {
         expect(response.status).to.equal(400);
         expect(response.body).to.deep.equal(expectedResponse);
     });
+    it('should return documentation url', async () => {
+        const expectedResponse = {
+            success: true,
+            data: `Documentation de l'API : ${process.env.BASE_URL}/api-docs`,
+        };
+
+        const response = await supertest(app).get('/api');
+
+        expect(response.status).to.equal(200);
+        expect(response.body).to.deep.equal(expectedResponse);
+    });
 });
