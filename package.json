@@ -1,45 +1,50 @@
 {
-  "name": "hellio-energie-back",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "tsc && node dist/app.js",
-    "dev": "ts-node-dev --exit-child app.ts",
-    "test": "NODE_ENV=test nyc mocha --timeout 15000 --require ts-node/register 'test/*.ts' --exit"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test && prettier --write ."
+    "name": "hellio-energie-back",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "tsc && node dist/app.js",
+        "dev": "ts-node-dev --exit-child app.ts",
+        "test": "NODE_ENV=test nyc mocha --timeout 15000 --require ts-node/register 'test/*.ts' --exit"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm test && prettier --write ."
+        }
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true,
+        "bracketSpacing": true
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.10.5",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-jsdoc-swagger": "^1.8.0",
+        "moment-timezone": "^0.5.43",
+        "typescript": "^5.3.3"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.11",
+        "@types/cors": "^2.8.17",
+        "@types/mocha": "^10.0.6",
+        "@types/supertest": "^2.0.16",
+        "@types/swagger-ui-express": "^4.1.6",
+        "chai": "^4.3.10",
+        "husky": "^8.0.3",
+        "mocha": "^10.2.0",
+        "nyc": "^15.1.0",
+        "prettier": "^3.1.1",
+        "supertest": "^6.3.3",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0"
     }
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.10.5",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-jsdoc-swagger": "^1.8.0",
-    "moment-timezone": "^0.5.43",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "@types/chai": "^4.3.11",
-    "@types/cors": "^2.8.17",
-    "@types/mocha": "^10.0.6",
-    "@types/supertest": "^2.0.16",
-    "@types/swagger-ui-express": "^4.1.6",
-    "chai": "^4.3.10",
-    "husky": "^8.0.3",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0",
-    "prettier": "^3.1.1",
-    "supertest": "^6.3.3",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0"
-  }
 }

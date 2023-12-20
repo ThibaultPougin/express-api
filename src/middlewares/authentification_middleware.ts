@@ -1,5 +1,3 @@
-const authentification_middleware = {
-
-}
+const authentification_middleware = {};
 
 export { authentification_middleware };

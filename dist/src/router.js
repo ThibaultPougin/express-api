@@ -1,8 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
 exports.router = void 0;
-const express_1 = require("express");
-const global_controller_1 = require("./controllers/global_controller");
+const express_1 = require('express');
+const global_controller_1 = require('./controllers/global_controller');
 const router = (0, express_1.Router)();
 exports.router = router;
 /**
@@ -11,7 +11,7 @@ exports.router = router;
  * @tags API
  * @return {object} 200 - success response - application/json
  * @example response - 200 - success response example
-* {
+ * {
  *   "success": true,
  *   "message": "Documentation de l'API : https://apiv2.hellio.com/api-docs"
  * }

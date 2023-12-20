@@ -1,1 +1,20 @@
-{"processes":{"1cfcbef5-78de-40ef-a04a-8c0205f4f215":{"parent":null,"children":[]}},"files":{"/Users/tpougin/Desktop/Hellio/hellio-energie-back/app.ts":["1cfcbef5-78de-40ef-a04a-8c0205f4f215"],"/Users/tpougin/Desktop/Hellio/hellio-energie-back/src/router.ts":["1cfcbef5-78de-40ef-a04a-8c0205f4f215"],"/Users/tpougin/Desktop/Hellio/hellio-energie-back/src/controllers/global_controller.ts":["1cfcbef5-78de-40ef-a04a-8c0205f4f215"]},"externalIds":{}}
+{
+    "processes": {
+        "1cfcbef5-78de-40ef-a04a-8c0205f4f215": {
+            "parent": null,
+            "children": []
+        }
+    },
+    "files": {
+        "/Users/tpougin/Desktop/Hellio/hellio-energie-back/app.ts": [
+            "1cfcbef5-78de-40ef-a04a-8c0205f4f215"
+        ],
+        "/Users/tpougin/Desktop/Hellio/hellio-energie-back/src/router.ts": [
+            "1cfcbef5-78de-40ef-a04a-8c0205f4f215"
+        ],
+        "/Users/tpougin/Desktop/Hellio/hellio-energie-back/src/controllers/global_controller.ts": [
+            "1cfcbef5-78de-40ef-a04a-8c0205f4f215"
+        ]
+    },
+    "externalIds": {}
+}

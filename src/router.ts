@@ -9,7 +9,7 @@ const router = Router();
  * @tags API
  * @return {object} 200 - success response - application/json
  * @example response - 200 - success response example
-* {
+ * {
  *   "success": true,
  *   "message": "Documentation de l'API : https://apiv2.hellio.com/api-docs"
  * }
