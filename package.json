@@ -6,7 +6,8 @@
     "scripts": {
         "start": "tsc && node dist/app.js",
         "dev": "ts-node-dev --exit-child app.ts",
-        "test": "NODE_ENV=test nyc mocha --timeout 15000 --require ts-node/register 'test/*.ts' --exit"
+        "test": "NODE_ENV=test nyc mocha --timeout 15000 --require ts-node/register 'test/*.ts' --exit",
+        "prepare": "husky install"
     },
     "husky": {
         "hooks": {
@@ -39,7 +40,7 @@
         "@types/supertest": "^2.0.16",
         "@types/swagger-ui-express": "^4.1.6",
         "chai": "^4.3.10",
-        "husky": "^8.0.3",
+        "husky": "^8.0.0",
         "mocha": "^10.2.0",
         "nyc": "^15.1.0",
         "prettier": "^3.1.1",
