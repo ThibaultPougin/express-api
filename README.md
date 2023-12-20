@@ -1,6 +1,4 @@
-# hellio-energie-back
-
-<img src="images/Logo_Hellio.jpg" height="80" width="266" >
+# express-api
 
 ## Getting started
 
