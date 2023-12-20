@@ -1,4 +1,5 @@
 import chai from 'chai';
+import supertest from "supertest";
 import { app } from '../app';
 
 
@@ -8,15 +9,16 @@ describe('Test router', () => {
 
   it('should return no endpoint', async () => {
 
-    const expectedResponse_BadEndpoint = { 
+    const expectedResponse = { 
         success: "false",
         message: `Cette route n'existe pas.`
     };
+
+    const response = await supertest(app)
+      .post("/badEndpoint");
     
-    const res = await chai.request(app).post('/badEndpoint');
-    
-    expect(res.status).to.equal(400);
-    expect(res.body).to.deep.equal(expectedResponse_BadEndpoint);
+    expect(response.status).to.equal(400);
+    expect(response.body).to.deep.equal(expectedResponse);
   });
 
 });
